@@ -14,14 +14,14 @@
 ############################################################
 
 FROM phusion/baseimage
-MAINTAINER Dan McDougall <daniel.mcdougall@liftoffsoftware.com>
+MAINTAINER Raseel Bhagat <raseelbhagat@gmail.com>
 
 # Ensures apt doesn't ask us silly questions:
 ENV DEBIAN_FRONTEND noninteractive
 
 # Add the Foreman repos
-RUN echo "deb http://deb.theforeman.org/ trusty nightly" > /etc/apt/sources.list.d/foreman.list
-RUN echo "deb http://deb.theforeman.org/ plugins nightly" >> /etc/apt/sources.list.d/foreman.list
+RUN echo "deb http://deb.theforeman.org/ xenial 1.13" > /etc/apt/sources.list.d/foreman.list
+RUN echo "deb http://deb.theforeman.org/ plugins 1.13" >> /etc/apt/sources.list.d/foreman.list
 RUN curl http://deb.theforeman.org/pubkey.gpg | apt-key add -
 RUN apt-get update --fix-missing && apt-get -y upgrade && \
     apt-get -y install git puppet apache2 build-essential ruby ruby-dev rake \

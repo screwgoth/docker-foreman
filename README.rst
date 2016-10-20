@@ -1,19 +1,17 @@
 docker-foreman
 ==============
 
-A `Dockerfile <https://docs.docker.com/reference/builder/>`_ and supporting
+Disclaimer: This is a fork of `Dan McDougall's <https://github.com/riskable/docker-foreman>` excellent `Dockerfile <https://docs.docker.com/reference/builder/>`_ and supporting
 scripts for running `Foreman <http://theforeman.org/>`_ inside a
 `Docker <https://www.docker.com/>`_ container.  It is based on
 `phusion/baseimage <https://registry.hub.docker.com/u/phusion/baseimage/>`_
 which is a modified version of Docker's default 'ubuntu' image.
 
 The image is configured to use the
-`'nightly' Debian repository <http://theforeman.org/manuals/1.6/index.html#3.3.3DebianPackages>`_
-because I could not get the 1.6 release working properly.
+`'1.13' Ubuntu 16.06 Xenial repository <https://theforeman.org/manuals/1.13/index.html#3.3.3DebianPackages>`_
 
-Note that I am not a Foreman expert (yet).  This Docker image was created so
-that can happen :smile: .  If I've made a horrible mistake somewere please
-`open an issue <https://github.com/riskable/docker-foreman/issues/new>`_.
+This Docker image was created so that can happen :smile: .  If I've made a horrible mistake somewere please
+`open an issue <https://github.com/screwgoth/docker-foreman/issues/new>`_.
 
 Building
 --------

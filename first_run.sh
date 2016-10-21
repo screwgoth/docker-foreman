@@ -29,7 +29,7 @@ chown -R postgres /etc/ssl/postgresql
 # Change PostgreSQL's ssl settings to reflect the new locations:
 sed -i -e "/ssl_cert_file/s/certs/postgresql\/certs/g" \
     -e "/ssl_key_file/s/private/postgresql\/private/g" \
-    /etc/postgresql/9.3/main/postgresql.conf
+    /etc/postgresql/9.5/main/postgresql.conf
 
 /etc/init.d/postgresql restart
 

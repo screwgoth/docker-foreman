@@ -52,4 +52,4 @@ EXPOSE 443
 # Our 'first run' script which takes care of resetting the DB the first time
 # the image runs with subsequent runs being left alone:
 # CMD ["/usr/local/bin/first_run.sh"]
-CMD ["/usr/sbin/foreman-installer"]
+CMD ["/usr/sbin/foreman-installer", "--verbose"]
